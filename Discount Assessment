@@ -1,0 +1,18 @@
+Using the source code from example number 3, calculate the final price of groceries worth IDR 150.000,  with a 30% discount and 15% tax.
+
+Here's the codes:
+
+class TugasAsesmen{
+public static void main (String [] args){
+int totalPrice = 150000;
+double discount = 30d/100d;
+double tax = 15d/100d;
+
+double finalPrice = (1-discount)*totalPrice;
+finalPrice += finalPrice*tax;
+System.out.println("Final Price: "+ finalPrice);
+}
+}
+
+
+P.s. double discount = 30d/100d bisa diganti dengan double discount = 0.3
