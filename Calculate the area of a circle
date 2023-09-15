@@ -1,0 +1,24 @@
+Calculate the area of a circle with radius (r) = 5, and show the result in console.
+The formula to calculate the area of a circle is:
+A = π * r²
+
+Here's the codes:
+
+
+import java.util.Scanner;
+
+public class TugasAsesmenDua {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Masukkan Jari-jari Lingkaran: ");
+        double r = scan.nextDouble();
+
+        double area = Math.PI * Math.pow(r, 2);
+
+        System.out.println("Luas lingkaran  " + r + " adalah: " +);
+       
+    }
+}
+
+P.s. phi tidak aku tulis (phi = 3.14) karena phi sudah memiliki ketentuan tersendiri disini yaitu (3.14.....)
