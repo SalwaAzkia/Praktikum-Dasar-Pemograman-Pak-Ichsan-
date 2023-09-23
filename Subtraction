@@ -1,0 +1,10 @@
+// Pengurangan Salwa Sayyidati Azkia
+
+public class Pengurangan {
+    public static void main(String[] args) {
+        int a = 9000520;
+        int b = 20;
+        int c = a - b;
+        System.out.println("Hasil dari Pengurangan 9000520 - 20 adalah " + c);
+    }
+}
