@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class FinalScore {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the exam score (0 to 100): ");
+        double examScore = scanner.nextDouble();
+
+        if (examScore < 0 || examScore > 100) {
+            System.out.println("Invalid exam score. Please enter a score between 0 and 100.");
+            return;
+        }
+
+        System.out.print("Enter the assignment score (0 to 100): ");
+        double assignmentScore = scanner.nextDouble();
+
+        if (assignmentScore < 0 || assignmentScore > 100) {
+            System.out.println("Invalid assignment score. Please enter a score between 0 and 100.");
+            return;
+        }
+        double finalScore = (0.6 * examScore) + (0.4 * assignmentScore);
+
+        System.out.println("Exam score = " + (0.6 * examScore));
+        System.out.println("Assignment value = " + (0.4 * assignmentScore));
+        System.out.println("Final score = " + finalScore);
+
+        scanner.close();
+    }
+}
